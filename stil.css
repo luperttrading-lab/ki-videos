@@ -1,0 +1,37 @@
+:root {
+  --bg: #0b1220; --karte: #18243f; --rand: #2c3c63; --text: #f1f5f9; --grau: #94a3b8; --cyan: #22d3ee;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0; min-height: 100vh; background: radial-gradient(ellipse 120% 900px at 30% 0%, #111c33 0%, var(--bg) 70%) no-repeat;
+  color: var(--text);
+  font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 960px; margin: 0 auto; padding: 28px 18px 60px; }
+h1 { font-size: clamp(1.6rem, 4.5vw, 2.4rem); line-height: 1.2; margin: 0.2em 0 0.2em; letter-spacing: -0.02em; }
+h2 { font-size: 1.25rem; margin: 1.8em 0 0.6em; }
+a { color: var(--cyan); }
+.meta { color: var(--grau); margin: 0 0 1.2em; font-size: 0.95rem; }
+.zurueck { margin: 0 0 0.6em; }
+.zurueck a { text-decoration: none; }
+video { width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 14px; border: 1px solid var(--rand); display: block; }
+.kapitel { list-style: none; padding: 0; margin: 0; }
+.kapitel li { display: flex; align-items: center; gap: 12px; padding: 6px 0; border-bottom: 1px solid #1f2d4d; }
+.kapitel button {
+  font: inherit; font-variant-numeric: tabular-nums; min-width: 4.2em; padding: 4px 10px; border-radius: 8px;
+  border: 1px solid var(--cyan); background: transparent; color: var(--cyan); cursor: pointer;
+}
+.quellen { padding-left: 1.1em; }
+.quellen li { margin: 0.35em 0; }
+.hinweis { color: var(--grau); font-size: 0.9rem; margin-top: 2em; }
+.liste { display: grid; gap: 18px; }
+.karte {
+  display: grid; grid-template-columns: minmax(0, 300px) 1fr; gap: 18px; align-items: start; padding: 14px;
+  background: var(--karte); border: 1px solid var(--rand); border-radius: 16px; color: var(--text); text-decoration: none;
+}
+.karte img { width: 100%; border-radius: 10px; display: block; }
+.karte h2 { margin: 0 0 0.2em; font-size: 1.2rem; color: var(--cyan); }
+.karte p { margin: 0.3em 0; }
+@media (max-width: 640px) { .karte { grid-template-columns: 1fr; } }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenCode Browse: KI-Agenten im echten Browser · KI-Videos</title>
+<meta name="description" content="Erklärvideo (7 min): Was OpenCode Browse kann, wie es funktioniert, was es kostet und welche Risiken es gibt.">
+<link rel="stylesheet" href="../stil.css">
+</head>
+<body>
+<main>
+  <p class="zurueck"><a href="../">← Alle Videos</a></p>
+  <h1>OpenCode Browse: KI-Agenten im echten Browser</h1>
+  <p class="meta">Erklärvideo · 7:13 min · Stand 8. November 2026</p>
+
+  <video id="video" controls playsinline preload="metadata" poster="poster.jpg">
+    <source src="video.mp4" type="video/mp4">
+    Dein Browser kann das Video nicht abspielen. <a href="video.mp4">Video herunterladen</a>.
+  </video>
+
+  <p>Mit OpenCode Browse benutzen KI-Agenten deinen echten, eingeloggten Browser: deine Tabs, deine Logins.
+  Das Video erklärt, wie das technisch funktioniert, wie es sich von Claude in Chrome unterscheidet, was es wirklich kostet
+  und warum Prompt Injection das größte Risiko ist.</p>
+
+  <h2>Kapitel</h2>
+  <ol class="kapitel">
+    <li><button data-t="0">0:00</button> Das Problem: die Login-Wand</li>
+    <li><button data-t="22">0:22</button> Die Lösung: OpenCode Browse</li>
+    <li><button data-t="53">0:53</button> So kommt der Agent in deinen Browser</li>
+    <li><button data-t="95">1:35</button> Im Hintergrund, mit Übergabe an dich</li>
+    <li><button data-t="121">2:01</button> Passwörter, ohne dass der Agent sie sieht</li>
+    <li><button data-t="143">2:23</button> Jedes Modell, auch lokal: zwei Haken</li>
+    <li><button data-t="196">3:16</button> Und Claude in Chrome?</li>
+    <li><button data-t="238">3:58</button> Datenschutz und Regeln</li>
+    <li><button data-t="271">4:31</button> Das Risiko: Prompt Injection</li>
+    <li><button data-t="314">5:14</button> Wie oft gelingt so ein Angriff?</li>
+    <li><button data-t="343">5:43</button> Was OpenCode Browse selbst absichert</li>
+    <li><button data-t="372">6:12</button> Zwei praktische Haken</li>
+    <li><button data-t="391">6:31</button> Faustregel und Fazit</li>
+  </ol>
+
+  <h2>Quellen</h2>
+  <ul class="quellen">
+    <li><a href="https://github.com/anomalyco/browse">OpenCode Browse auf GitHub</a> (README, Agenten-Anleitung,
+      <a href="https://github.com/anomalyco/browse/blob/main/store/privacy-policy.md">Datenschutzerklärung</a>) ·
+      <a href="https://opencode.ai/product/browse">Produktseite</a> · <a href="https://www.npmjs.com/package/@opencode/browse">npm, Version 0.0.15</a></li>
+    <li><a href="https://code.claude.com/docs/en/chrome">Claude Code mit Chrome</a> · <a href="https://claude.com/pricing">Claude-Preise</a></li>
+    <li>Anthropic: <a href="https://www.anthropic.com/news/claude-for-chrome">Claude for Chrome</a> (Aug. 2025) ·
+      <a href="https://www.anthropic.com/research/prompt-injection-defenses">Prompt-Injection-Abwehr</a> (Nov. 2025)</li>
+    <li><a href="https://brave.com/blog/comet-prompt-injection/">Brave: Angriff auf Comet</a> (Aug. 2025) ·
+      <a href="https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/">Unit 42: Angriffe im offenen Netz</a> (März 2026)</li>
+    <li><a href="https://docs.ollama.com/context-length">Ollama: Kontextlänge</a> ·
+      <a href="https://dev.to/kuroko1t/how-accessibility-tree-formatting-affects-token-cost-in-browser-mcps-n2a">Token-Messung bei Browser-MCPs</a> (Feb. 2026, Einzelmessung)</li>
+    <li><a href="https://github.com/microsoft/playwright-mcp">Playwright MCP</a> ·
+      <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">Chrome DevTools MCP</a></li>
+    <li><a href="https://www.linkedin.com/legal/user-agreement">LinkedIn-Nutzervereinbarung</a> · Bedingungen für das Online-Banking einer Sparkasse (Beispiel)</li>
+  </ul>
+  <p class="hinweis">Alle Angaben ohne Gewähr, das Projekt ändert sich fast täglich. Keine Rechtsberatung.
+  Angeregt durch ein Video von ZeldoReacts. Text und Grafik eigenständig erstellt, Stimme: ElevenLabs.</p>
+</main>
+<script>
+  const v = document.getElementById('video');
+  document.querySelectorAll('.kapitel button').forEach((b) => b.addEventListener('click', () => {
+    v.currentTime = Number(b.dataset.t);
+    v.play();
+    v.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }));
+</script>
+</body>
+</html>
