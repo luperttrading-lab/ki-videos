@@ -8,6 +8,8 @@ Erklärvideos rund um KI-Werkzeuge, veröffentlicht über GitHub Pages (Zweig `m
 - Der Nutzer liest auf dem iPhone. **Alles zum Anklicken kommt ganz ans Ende**: Dateien, Hörproben, Bilder, Videos und
   Links stehen nach dem Erklärtext, direkt vor der Kostenzeile. Ablauf: erst Text, dann `SendUserFile`, dann nur noch
   Link-Zeile und Kostenzeile. Im Text auf Dateien mit „unten“ verweisen.
+- **Nur eine Version schicken:** pro Antwort genau die Datei, die angesehen werden soll. Vergleiche in ein einziges
+  beschriftetes Bild packen, ältere Fassungen nicht erneut schicken.
 - Internetadressen immer als klickbaren Markdown-Link.
 
 ## Regeln für jedes Video (vereinbart am 09.11.2026)
