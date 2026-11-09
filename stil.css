@@ -35,3 +35,20 @@ video { width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 14px
 .karte h2 { margin: 0 0 0.2em; font-size: 1.2rem; color: var(--cyan); }
 .karte p { margin: 0.3em 0; }
 @media (max-width: 640px) { .karte { grid-template-columns: 1fr; } }
+.begriff {
+  margin: 14px 0 6px; padding: 14px 18px; border-radius: 14px; border: 2px solid #2c3c63; background: #111a2e;
+  min-height: 150px; transition: border-color .3s, background .3s;
+}
+.begriff.an { border-color: #a78bfa; background: #1b1838; }
+.begriff-kopf { font-size: .78rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #a78bfa; }
+.begriff-name { font-size: 1.25rem; font-weight: 800; margin-top: 2px; }
+.begriff:not(.an) .begriff-name { font-size: .95rem; font-weight: 500; color: var(--grau); }
+.begriff-text { color: #cbd5e1; margin-top: 2px; }
+.begriffe { margin: 0; }
+.begriffe > div { padding: 8px 0; border-bottom: 1px solid #1f2d4d; }
+.begriffe dt { font-weight: 800; display: flex; align-items: center; gap: 12px; }
+.begriffe dd { margin: 4px 0 0 calc(4.2em + 12px); color: #cbd5e1; }
+.begriffe button {
+  font: inherit; font-weight: 500; font-variant-numeric: tabular-nums; min-width: 4.2em; padding: 4px 10px; border-radius: 8px;
+  border: 1px solid var(--cyan); background: transparent; color: var(--cyan); cursor: pointer;
+}

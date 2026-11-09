@@ -11,12 +11,18 @@
 <main>
   <p class="zurueck"><a href="../">← Alle Videos</a></p>
   <h1>OpenCode Browse: KI-Agenten im echten Browser</h1>
-  <p class="meta">Erklärvideo · 7:16 min · Stand 8. November 2026</p>
+  <p class="meta">Erklärvideo · 7:52 min · Stand 8. November 2026</p>
 
   <video id="video" controls playsinline preload="metadata" poster="poster.jpg">
     <source src="video.mp4" type="video/mp4">
     Dein Browser kann das Video nicht abspielen. <a href="video.mp4">Video herunterladen</a>.
   </video>
+
+  <div id="begriff" class="begriff" aria-live="polite">
+    <div class="begriff-kopf">Begriff</div>
+    <div id="begriff-name" class="begriff-name">Erklärungen erscheinen hier, sobald im Video ein Fachbegriff fällt.</div>
+    <div id="begriff-text" class="begriff-text"></div>
+  </div>
 
   <p>Mit OpenCode Browse benutzen KI-Agenten deinen echten, eingeloggten Browser: deine Tabs, deine Logins.
   Das Video erklärt, wie das technisch funktioniert, wie es sich von Claude in Chrome unterscheidet, was es wirklich kostet
@@ -26,18 +32,37 @@
   <ol class="kapitel">
     <li><button data-t="0">0:00</button> Das Problem: die Login-Wand</li>
     <li><button data-t="25">0:25</button> Die Lösung: OpenCode Browse</li>
-    <li><button data-t="56">0:56</button> So kommt der Agent in deinen Browser</li>
-    <li><button data-t="98">1:38</button> Im Hintergrund, mit Übergabe an dich</li>
-    <li><button data-t="124">2:04</button> Passwörter, ohne dass der Agent sie sieht</li>
-    <li><button data-t="146">2:26</button> Jedes Modell, auch lokal: zwei Haken</li>
-    <li><button data-t="199">3:19</button> Und Claude in Chrome?</li>
-    <li><button data-t="241">4:01</button> Datenschutz und Regeln</li>
-    <li><button data-t="274">4:34</button> Das Risiko: Prompt Injection</li>
-    <li><button data-t="317">5:17</button> Wie oft gelingt so ein Angriff?</li>
-    <li><button data-t="347">5:47</button> Was OpenCode Browse selbst absichert</li>
-    <li><button data-t="375">6:15</button> Zwei praktische Haken</li>
-    <li><button data-t="394">6:34</button> Faustregel und Fazit</li>
+    <li><button data-t="61">1:01</button> So kommt der Agent in deinen Browser</li>
+    <li><button data-t="102">1:42</button> Im Hintergrund, mit Übergabe an dich</li>
+    <li><button data-t="136">2:16</button> Passwörter, ohne dass der Agent sie sieht</li>
+    <li><button data-t="158">2:38</button> Jedes Modell, auch lokal: zwei Haken</li>
+    <li><button data-t="211">3:31</button> Agent oder Werkzeug? Claude in Chrome im Vergleich</li>
+    <li><button data-t="274">4:34</button> Datenschutz und Regeln</li>
+    <li><button data-t="307">5:07</button> Das Risiko: Prompt Injection</li>
+    <li><button data-t="350">5:50</button> Wie oft gelingt so ein Angriff?</li>
+    <li><button data-t="380">6:20</button> Was OpenCode Browse selbst absichert</li>
+    <li><button data-t="408">6:48</button> Zwei praktische Haken</li>
+    <li><button data-t="430">7:10</button> Faustregel und Fazit</li>
   </ol>
+
+  <h2>Begriffe im Video</h2>
+  <dl class="begriffe">
+    <div><dt><button data-t="22">0:22</button> Cookies</dt><dd>Mini-Dateien, mit denen Webseiten dich wiedererkennen und eingeloggt halten</dd></div>
+    <div><dt><button data-t="32">0:32</button> Coding-Agent</dt><dd>KI, die selbstständig programmiert, z. B. OpenCode, Claude Code, Codex</dd></div>
+    <div><dt><button data-t="45">0:45</button> Open Source</dt><dd>Software mit öffentlichem Quellcode: jeder kann sie prüfen und nutzen</dd></div>
+    <div><dt><button data-t="56">0:56</button> Claude Code</dt><dd>Anthropics Coding-Agent für die Kommandozeile (Terminal)</dd></div>
+    <div><dt><button data-t="73">1:13</button> MCP</dt><dd>Model Context Protocol: offener Standard, über den KI-Agenten Werkzeuge anschließen</dd></div>
+    <div><dt><button data-t="83">1:23</button> Relay</dt><dd>Vermittlungsstelle auf deinem Rechner, die Befehle an den Browser weiterreicht</dd></div>
+    <div><dt><button data-t="127">2:07</button> Captcha</dt><dd>Test, ob ein Mensch vor dem Bildschirm sitzt, z. B. Bilder anklicken</dd></div>
+    <div><dt><button data-t="151">2:31</button> Zwei-Faktor-Anmeldung</dt><dd>Login mit Passwort plus Einmalcode, z. B. aus einer Authenticator-App</dd></div>
+    <div><dt><button data-t="168">2:48</button> Ollama</dt><dd>kostenloses Programm, das KI-Modelle auf dem eigenen Rechner ausführt</dd></div>
+    <div><dt><button data-t="179">2:59</button> Token</dt><dd>Wortstück: KI-Modelle zählen Text und Kosten in Tokens</dd></div>
+    <div><dt><button data-t="205">3:25</button> Tool-Aufruf</dt><dd>Befehl des Modells an ein Werkzeug, z. B. „klicke hier“ oder „lies die Seite“</dd></div>
+    <div><dt><button data-t="241">4:01</button> API-Schlüssel</dt><dd>Zugang zu einem KI-Modell per Programm: bezahlt wird nach Verbrauch statt per Abo</dd></div>
+    <div><dt><button data-t="260">4:20</button> Playwright MCP, Chrome DevTools MCP</dt><dd>kostenlose Werkzeuge von Microsoft und Google, mit denen KI-Agenten Browser steuern</dd></div>
+    <div><dt><button data-t="324">5:24</button> Prompt Injection</dt><dd>versteckte Anweisungen in Texten oder Webseiten, die eine KI befolgt, obwohl du sie nicht gegeben hast</dd></div>
+    <div><dt><button data-t="435">7:15</button> Browserprofil</dt><dd>getrennter Bereich im Browser mit eigenen Logins, Cookies und Lesezeichen</dd></div>
+  </dl>
 
   <h2>Quellen</h2>
   <ul class="quellen">
@@ -60,7 +85,24 @@
 </main>
 <script>
   const v = document.getElementById('video');
-  document.querySelectorAll('.kapitel button').forEach((b) => b.addEventListener('click', () => {
+  const BEGRIFFE = [{"t": 22.87, "b": "Cookies", "e": "Mini-Dateien, mit denen Webseiten dich wiedererkennen und eingeloggt halten"}, {"t": 32.43, "b": "Coding-Agent", "e": "KI, die selbstständig programmiert, z. B. OpenCode, Claude Code, Codex"}, {"t": 45.07, "b": "Open Source", "e": "Software mit öffentlichem Quellcode: jeder kann sie prüfen und nutzen"}, {"t": 56.51, "b": "Claude Code", "e": "Anthropics Coding-Agent für die Kommandozeile (Terminal)"}, {"t": 73.81, "b": "MCP", "e": "Model Context Protocol: offener Standard, über den KI-Agenten Werkzeuge anschließen"}, {"t": 83.93, "b": "Relay", "e": "Vermittlungsstelle auf deinem Rechner, die Befehle an den Browser weiterreicht"}, {"t": 127.36, "b": "Captcha", "e": "Test, ob ein Mensch vor dem Bildschirm sitzt, z. B. Bilder anklicken"}, {"t": 151.53, "b": "Zwei-Faktor-Anmeldung", "e": "Login mit Passwort plus Einmalcode, z. B. aus einer Authenticator-App"}, {"t": 168.7, "b": "Ollama", "e": "kostenloses Programm, das KI-Modelle auf dem eigenen Rechner ausführt"}, {"t": 179.02, "b": "Token", "e": "Wortstück: KI-Modelle zählen Text und Kosten in Tokens"}, {"t": 205.18, "b": "Tool-Aufruf", "e": "Befehl des Modells an ein Werkzeug, z. B. „klicke hier“ oder „lies die Seite“"}, {"t": 241.52, "b": "API-Schlüssel", "e": "Zugang zu einem KI-Modell per Programm: bezahlt wird nach Verbrauch statt per Abo"}, {"t": 260.88, "b": "Playwright MCP, Chrome DevTools MCP", "e": "kostenlose Werkzeuge von Microsoft und Google, mit denen KI-Agenten Browser steuern"}, {"t": 324.86, "b": "Prompt Injection", "e": "versteckte Anweisungen in Texten oder Webseiten, die eine KI befolgt, obwohl du sie nicht gegeben hast"}, {"t": 435.46, "b": "Browserprofil", "e": "getrennter Bereich im Browser mit eigenen Logins, Cookies und Lesezeichen"}];
+  const kasten = document.getElementById('begriff');
+  const name = document.getElementById('begriff-name');
+  const text = document.getElementById('begriff-text');
+  let aktiv = null;
+  v.addEventListener('timeupdate', () => {
+    const t = v.currentTime;
+    let treffer = null;
+    BEGRIFFE.forEach((b, i) => {
+      const ende = Math.min(b.t + 8, BEGRIFFE[i + 1] ? BEGRIFFE[i + 1].t : 1e9);
+      if (t >= b.t - 0.2 && t < ende) treffer = b;
+    });
+    if (treffer === aktiv) return;
+    aktiv = treffer;
+    kasten.classList.toggle('an', !!treffer);
+    if (treffer) { name.textContent = treffer.b; text.textContent = treffer.e; }
+  });
+  document.querySelectorAll('button[data-t]').forEach((b) => b.addEventListener('click', () => {
     v.currentTime = Number(b.dataset.t);
     v.play();
     v.scrollIntoView({behavior: 'smooth', block: 'start'});
