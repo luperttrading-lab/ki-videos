@@ -23,5 +23,8 @@ Erklärvideos rund um KI-Werkzeuge, veröffentlicht über GitHub Pages (Zweig `m
 - **Kein leerer Bildschirm, während gesprochen wird:** spätestens 1 s nach Szenenbeginn steht etwas Inhaltliches im
   Bild (Platzhalter oder gedimmte Abschnitte sind in Ordnung).
 - **Ein Gedanke gleichzeitig:** nicht alle Elemente einer Szene stehen lassen; Altes ausblenden, wenn Neues kommt.
+- **Neuheits-Check vor jedem Video:** Erst klären, was am Thema wirklich neu ist (gegen bestehende Lösungen
+  recherchieren). Gibt es nichts Neues, kein Video machen oder im Video klar sagen „wenig neu“. Die Antwort gehört
+  ins Fazit und als Punkt auf die Titelkarte („Was wirklich neu ist“).
 - **Folgevideo:** Jedes Video darf ein neues anstoßen, das sich aus einer offenen Frage ergibt. Ideen in `IDEEN.md`.
 - Pro Folge eine frische Sitzung mit kurzer Übergabe statt einer endlos wachsenden Sitzung (Kosten).
