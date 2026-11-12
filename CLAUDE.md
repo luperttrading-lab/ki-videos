@@ -26,5 +26,8 @@ Erklärvideos rund um KI-Werkzeuge, veröffentlicht über GitHub Pages (Zweig `m
 - **Neuheits-Check vor jedem Video:** Erst klären, was am Thema wirklich neu ist (gegen bestehende Lösungen
   recherchieren). Gibt es nichts Neues, kein Video machen oder im Video klar sagen „wenig neu“. Die Antwort gehört
   ins Fazit und als Punkt auf die Titelkarte („Was wirklich neu ist“).
+- **Titelkarte passend zum Video:** Die farbigen Punkte auf Titelkarte und Thumbnail sind kein festes Schema. Je Video
+  die 3 (höchstens 4) Fragen wählen, die das Video wirklich beantwortet; im Video gern 4, im Thumbnail eher 3
+  (Lesbarkeit in der YouTube-Liste).
 - **Folgevideo:** Jedes Video darf ein neues anstoßen, das sich aus einer offenen Frage ergibt. Ideen in `IDEEN.md`.
 - Pro Folge eine frische Sitzung mit kurzer Übergabe statt einer endlos wachsenden Sitzung (Kosten).
